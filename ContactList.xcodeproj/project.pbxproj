@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		3CB3ACC12982B75300F3A0BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3ACC02982B75300F3A0BD /* AppDelegate.swift */; };
 		3CB3ACC32982B75300F3A0BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3ACC22982B75300F3A0BD /* SceneDelegate.swift */; };
-		3CB3ACC52982B75300F3A0BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3ACC42982B75300F3A0BD /* ViewController.swift */; };
+		3CB3ACC52982B75300F3A0BD /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3ACC42982B75300F3A0BD /* PersonsListViewController.swift */; };
 		3CB3ACC82982B75300F3A0BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3ACC62982B75300F3A0BD /* Main.storyboard */; };
 		3CB3ACCA2982B75400F3A0BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3ACC92982B75400F3A0BD /* Assets.xcassets */; };
 		3CB3ACCD2982B75400F3A0BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3ACCB2982B75400F3A0BD /* LaunchScreen.storyboard */; };
+		3CB3ACD52982B88E00F3A0BD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3ACD42982B88E00F3A0BD /* Person.swift */; };
+		3CB3ACDA2982FFBD00F3A0BD /* PersonsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3ACD92982FFBD00F3A0BD /* PersonsDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3CB3ACBD2982B75300F3A0BD /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB3ACC02982B75300F3A0BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CB3ACC22982B75300F3A0BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3CB3ACC42982B75300F3A0BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CB3ACC42982B75300F3A0BD /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
 		3CB3ACC72982B75300F3A0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CB3ACC92982B75400F3A0BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CB3ACCC2982B75400F3A0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CB3ACCE2982B75400F3A0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB3ACD42982B88E00F3A0BD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3CB3ACD92982FFBD00F3A0BD /* PersonsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				3CB3ACC02982B75300F3A0BD /* AppDelegate.swift */,
 				3CB3ACC22982B75300F3A0BD /* SceneDelegate.swift */,
-				3CB3ACC42982B75300F3A0BD /* ViewController.swift */,
-				3CB3ACC62982B75300F3A0BD /* Main.storyboard */,
+				3CB3ACD82982B8A900F3A0BD /* ViewControllers */,
+				3CB3ACD62982B89500F3A0BD /* Models */,
+				3CB3ACD72982B8A100F3A0BD /* Storyboards */,
 				3CB3ACC92982B75400F3A0BD /* Assets.xcassets */,
-				3CB3ACCB2982B75400F3A0BD /* LaunchScreen.storyboard */,
 				3CB3ACCE2982B75400F3A0BD /* Info.plist */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		3CB3ACD62982B89500F3A0BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CB3ACD42982B88E00F3A0BD /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CB3ACD72982B8A100F3A0BD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3CB3ACC62982B75300F3A0BD /* Main.storyboard */,
+				3CB3ACCB2982B75400F3A0BD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3CB3ACD82982B8A900F3A0BD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3CB3ACC42982B75300F3A0BD /* PersonsListViewController.swift */,
+				3CB3ACD92982FFBD00F3A0BD /* PersonsDetailsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CB3ACC52982B75300F3A0BD /* ViewController.swift in Sources */,
+				3CB3ACC52982B75300F3A0BD /* PersonsListViewController.swift in Sources */,
+				3CB3ACDA2982FFBD00F3A0BD /* PersonsDetailsViewController.swift in Sources */,
 				3CB3ACC12982B75300F3A0BD /* AppDelegate.swift in Sources */,
+				3CB3ACD52982B88E00F3A0BD /* Person.swift in Sources */,
 				3CB3ACC32982B75300F3A0BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,9 +334,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = KirillTaraturin.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +365,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = KirillTaraturin.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
