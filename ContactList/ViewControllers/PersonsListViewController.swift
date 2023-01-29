@@ -11,13 +11,8 @@ class PersonsListViewController: UITableViewController {
 
     var personInfo = Person.getPerson()
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
 // MARK: - Table view data source
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         personInfo.count
     }
@@ -39,5 +34,7 @@ class PersonsListViewController: UITableViewController {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         detailsVC.person = personInfo[indexPath.row]
     }
+    
+    
 }
 

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Persons List-->
+        <!--Persons list-->
         <scene sceneID="s3j-8j-yk4">
             <objects>
                 <tableViewController id="Y11-o1-FdQ" customClass="PersonsListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,11 +43,12 @@
                             <outlet property="delegate" destination="Y11-o1-FdQ" id="zKU-XO-9tN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Persons List" id="cLh-qP-aEc"/>
+                    <tabBarItem key="tabBarItem" title="Person" image="person" catalog="system" id="QqN-cI-PBK"/>
+                    <navigationItem key="navigationItem" title="Persons list" id="cLh-qP-aEc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Duu-pM-Gwx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1571.7557251908397" y="77.464788732394368"/>
+            <point key="canvasLocation" x="2372" y="75"/>
         </scene>
         <!--Persons Details View Controller-->
         <scene sceneID="ooA-Np-MB4">
@@ -91,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NaG-7a-ncd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2376" y="89"/>
+            <point key="canvasLocation" x="3293" y="75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ncB-0K-Wff">
@@ -104,15 +105,16 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Y11-o1-FdQ" kind="relationship" relationship="rootViewController" id="3HP-kv-3nk"/>
+                        <segue destination="Y11-o1-FdQ" kind="relationship" relationship="rootViewController" id="Lyr-49-hh1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dj0-dU-0me" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="645.03816793893122" y="77.464788732394368"/>
+            <point key="canvasLocation" x="1517" y="75"/>
         </scene>
     </scenes>
     <resources>
+        <image name="person" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
